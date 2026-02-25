@@ -13,25 +13,29 @@ Find everything that needs done in this file.
 
 # Development To-Do
 
- MCU Board - Ezra, Sandy, Alfie, Ben
-	1. MCU Selection
-		1. Assess pin requirements - Ben
-			1. Assess I/O interaction with other systems
-			2. Assess suitable communication protocols between systems
-		2. ~~Research power filters~~
-			- ~~How do other MCU's do it?~~
-		3. Price  - Ben
-			- Delivery 
-			- Board cost - 5 for £5 pre-assembled
-			- Assembly cost
-		4. ~~Assess power requirements~~
-		5. ~~Assess RTOS compatibility~~
+ 1. Control System - Ezra, Sandy, Alfie, Ben
+	1. ~~MCU Selection
+			1. Assess pin requirements - Ben
+				1. Assess I/O interaction with other systems
+				2. Assess suitable communication protocols between systems
+			2. Research power filters
+				- How do other MCU's do it?
+			3. Price  - Ben
+				- Delivery 
+				- Board cost - 5 for £5 pre-assembled
+				- Assembly cost
+			4. Assess power requirements
+			5. Assess RTOS compatibility~~~
 	2. Assess Software Architecture - Owen
 		1. ~~RTOS vs Bare Meta - RTOS~~
 		2. General file structure
 		3. Set consistent coding guidelines (MRSA standard)
 	3. MCU coding - everyone
-	4. ~~Assess Board Level Components~~
+		1. Manual Thruster algorithm
+			1. Feedback required?
+    	2. Reading and responding to state inputs
+	4. KiCAD schematic of whole system. 
+	5. ~~Assess Board Level Components~~
 		1. ~~LED component~~
 		2. ~~Headers/ Interfaces~~
 			- ~~USB - Jetson~~
@@ -62,6 +66,14 @@ Find everything that needs done in this file.
 		1. Assess pin requirements
 		2. Assess communication protocols
 		3. Could use a simple Arduino
+	7. Create KiCAD Schematic
+	8. Code Diagnostic MCU
+		1. Initialise
+ 		2. Repeat \/
+		3. Poll sensors
+		4. Structure packets
+		5. Send to shore
+		6. Repeat /\
 
 3. Custom ESC - Ben
 
