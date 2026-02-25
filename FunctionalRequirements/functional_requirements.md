@@ -1,11 +1,28 @@
 # Functional Requirements
 
-1. Power
-	1. Voltage rails
-	2. Safety
-		1. BMS
-		2. Fusebox
-	3. Battery
+1. Power (NOT FINISHED)
+	- 1.1 Voltage Regulation [1]
+		- 1.1.1 Voltage regulators shall be used to provide stable and discreet voltage rails as required
+			- 1.1.1.1 The voltage must be regulated to X for Y
+			- 1.1.1.2 The voltage must be regulated to A for B and C
+		- 1.1.2 Voltage regulators shall be able to withstand expected current maxima for their respective {rails}.
+	- 1.2 Safety
+		- 1.2.1 Fuses shall be placed in appropriate locations as to protect against overcurrents/voltages.
+			- 1.2.1.1 Fuses shall be placed where respective current/voltage maxima drawn shall not be exceeded.
+   			- 1.2.1.2 Fuses shall be rated at/above their respective {rail's} current/voltage maximum.
+		- 1.2.2 Relays shall be installed in their appropriate locations to control the delivery of power to systems.
+			- 1.2.2.1 Relays shall be able to withstand expected current maxima for their respective {rails}.
+   			- 1.2.2.2 Relays shall be able to recieve and execute instructions from the MCU.
+		- 1.2.3 Emergency switches shall be present and always able to be triggered
+			- No. and locations of switches
+   			- Functions of switches
+	- 1.3 Battery
+		- 1.3.1 The battery shall be able to provide X volts at it's terminals
+   		- 1.3.2 The battery shall be able to provide sufficient current to the onboard systems
+			- 1.3.2.1 The battery shall be able to provide x Ah.
+			- 1.3.2.2 The battery shall have a discharge rate of y.
+		- 1.3.3 The battery system shall include an appropriate BMS
+			- 1.3.3.1. The BMS shall be able to provide a {UART????} output.
 2. Diagnostics
 	- 3.1 Sensing
 		- 3.1.1 The device must measure the temperature inside ESC enclosures.
@@ -84,3 +101,4 @@
 		- 4.4.2. Any boxes or compartments used to house electric components will be waterproof
 		- 4.4.3. Components that are not in a waterproof compartment will be waterproofed themselves
 
+[1] Expected current maxima refers to the maximum current allowed in safe operation by current consuming components. Relays shall be in place above these
