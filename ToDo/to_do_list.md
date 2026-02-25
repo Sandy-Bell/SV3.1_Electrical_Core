@@ -14,18 +14,18 @@ Find everything that needs done in this file.
 # Development To-Do
 
  1. Control System - Ezra, Sandy, Alfie, Ben
-	1. ~~MCU Selection
-			1. Assess pin requirements - Ben
-				1. Assess I/O interaction with other systems
-				2. Assess suitable communication protocols between systems
-			2. Research power filters
-				- How do other MCU's do it?
-			3. Price  - Ben
-				- Delivery 
-				- Board cost - 5 for £5 pre-assembled
-				- Assembly cost
-			4. Assess power requirements
-			5. Assess RTOS compatibility~~~
+	1. ~~MCU Selection~~
+			1. ~~Assess pin requirements - Ben~~
+				1. ~~Assess I/O interaction with other systems~~
+				2. ~~Assess suitable communication protocols between systems~~
+			2. ~~Research power filters~~
+				- ~~How do other MCU's do it?~~
+			3. ~~Price  - Ben~~
+				-~~Delivery~~ 
+				- ~~Board cost - 5 for £5 pre-assembled~~
+				- ~~Assembly cost~~
+			4. ~~Assess power requirements~~
+			5. ~~Assess RTOS compatibility~~
 	2. Assess Software Architecture - Owen
 		1. ~~RTOS vs Bare Meta - RTOS~~
 		2. General file structure
@@ -33,9 +33,9 @@ Find everything that needs done in this file.
 	3. MCU coding - everyone
 		1. Manual Thruster algorithm
 			1. Feedback required?
-    	2. Reading and responding to state inputs
-	4. KiCAD schematic of whole system. 
-	5. ~~Assess Board Level Components~~
+    	4. Reading and responding to state inputs
+	5. KiCAD schematic of whole system. 
+	6. ~~Assess Board Level Components~~
 		1. ~~LED component~~
 		2. ~~Headers/ Interfaces~~
 			- ~~USB - Jetson~~
@@ -69,24 +69,24 @@ Find everything that needs done in this file.
 	7. Create KiCAD Schematic
 	8. Code Diagnostic MCU
 		1. Initialise
- 		2. Repeat \/
-		3. Poll sensors
-		4. Structure packets
-		5. Send to shore
-		6. Repeat /\
+		2. Loop 
+			1. Poll sensors
+			2. Structure packets
+			3. Send to shore
+		3. End 
 
-3. Custom ESC - Ben
+4. Custom ESC - Ben
 
-4. Physical Layouting - Sandy
+5. Physical Layouting - Sandy
 	1. Server racks idea
 	2. Leak Sensors
 	3. ESCS
 		1. Seperate box with cooling and multiple inside
-	4. DIN Rail idea
+	4. Explore DIN Rail idea
 	5. Doige connector orange and grey for power cables and rails
-	6. mounting standard
+	6. Mounting standard
 		1. current 20x20 aluminium extrusions -  better fitting would be nicer 
 		2. shear/ tension forces
 			- clamps
-5. ~~Get engine room free - Owen~~
+6. ~~Get engine room free - Owen~~
 
